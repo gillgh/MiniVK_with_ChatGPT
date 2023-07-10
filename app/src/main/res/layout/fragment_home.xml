@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:background="@drawable/background_home">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ivChangeAvatar">
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <Button
+            android:id="@+id/btn_change_avatar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_avatar"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/logout"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivChangeAvatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        tools:src="@tools:sample/avatars"
+        />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/ivChangeAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        />
+
+    <TextView
+        android:id="@+id/textSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/ivChangeAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/textName"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        />
+
+    <TextView
+        android:id="@+id/textDob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/ivChangeAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/ll1">
+
+        <!-- Поле "Имя" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <EditText
+            android:id="@+id/chg_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <!-- Поле "Фамилия" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/surname"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <EditText
+            android:id="@+id/chg_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <!-- Поле "Почта" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <EditText
+            android:id="@+id/chg_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <!-- Поле "Дата рождения" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_of_birth"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <EditText
+            android:id="@+id/chg_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <!-- Поле "Пароль" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+        <EditText
+            android:id="@+id/chg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

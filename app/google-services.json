@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "787639513586",
+    "project_id": "fivewok-7e2b9",
+    "firebase_url": "https://fivewok-7e2b9-default-rtdb.europe-west1.firebasedatabase.app",
+    "storage_bucket": "fivewok-7e2b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787639513586:android:4398215f5914bae0f87b6b",
+        "android_client_info": {
+          "package_name": "com.example.fivewok"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMIfSGUhxWjmAe3sUOJH5aGfdK4JxHdZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
